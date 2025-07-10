@@ -53,7 +53,7 @@ else:
     raise ValueError("EMAIL_MAP_BASE64 environment variable not set.")
 
 # ───── Constants ─────
-pdf_folder = '/home/runner/work/convenio/convenio/'
+pdf_folder = '/home/runner/work/convenios/convenios/'
 text_to_check = "Nenhum relatório encontrado para os filtros selecionados"
 remaining_files = []
 
