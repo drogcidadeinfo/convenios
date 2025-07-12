@@ -94,7 +94,7 @@ try:
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "tabTabdhtmlgoodies_tabView1_1"))).click()
         time.sleep(2)
         empresas = [
-            "19", "59", "49", "72", "55", "65", "22", "61", "197", "156", "132", "31", "64",
+            "15", "16", "76", "59", "49", "72", "55", "65", "22", "61", "197", "156", "132", "31", "64",
             "160", "168", "162", "169", "163", "161", "177", "159", "166", "164", "165", "315"
         ]
         
@@ -106,6 +106,8 @@ try:
             input_element.send_keys(Keys.ENTER)
             time.sleep(2)
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "tabTabdhtmlgoodies_tabView1_2"))).click()
+        time.sleep(2)
+        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "chk_agrup_empre"))).click()
         time.sleep(2)
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "selecao_periodo_1"))).click()
         time.sleep(2)
