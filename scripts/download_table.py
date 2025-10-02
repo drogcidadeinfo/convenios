@@ -93,9 +93,13 @@ try:
         time.sleep(2)
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "tabTabdhtmlgoodies_tabView1_1"))).click()
         time.sleep(2)
-        empresas = [
+        """empresas = [
             "15", "16", "76", "59", "49", "72", "55", "65", "22", "61", "197", "156", "132", "31", "64",
             "160", "168", "162", "169", "163", "161", "177", "159", "166", "164", "165", "315"
+        ]"""
+        empresas = [
+            "15", "16", "31", "76", "132", "156", "159", "160", "161", "162", "163", "164", "165",
+            "166", "168", "169", "177", "315"
         ]
         
         for codigo in empresas:
