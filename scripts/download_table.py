@@ -77,6 +77,8 @@ try:
     WebDriverWait(driver, 10).until(lambda x: x.execute_script("return document.readyState === 'complete'"))
     time.sleep(15)
 
+    driver.find_element(By.TAG_NAME, "body").send_keys(Keys.F11)
+
     """
     popup_element = driver.find_element(By.ID, "modalMsgMovimentacaoAnvisa") 
     if popup_element:
